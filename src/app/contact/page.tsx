@@ -1,16 +1,25 @@
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faExclamation } from "@fortawesome/free-solid-svg-icons/faExclamation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { SiGithub, SiX, SiReact } from "@icons-pack/react-simple-icons";
 
-export default function Home() {
+export default function Contact() {
   return (
     <div className="min-h-screen w-full bg-zinc-950 text-white flex items-center justify-center">
       <div className="container mx-auto px-16 flex-col lg:flex-row">
         <div>
           <img src="/mbwhite.svg" className="max-w-xl" />
-          <p className="mt-2 font-nunito font-regular text-lg">
-            hi there!!! i'm just your average full-stack developer (and also an
-            aspiring doctor) who likes to build and explore super duper cool
-            things
-          </p>
+          <h2 className="mt-2 font-nunito font-bold text-lg">
+            Contact Information:
+          </h2>
+          <div className="h-4 flex items-center justify-center min-h-4">
+            <FontAwesomeIcon icon={faEnvelope} size="xs"/>
+            <p className="font-nunito font-regular text-lg">
+              oohoohahah@monkeybusiness.dev
+            </p>
+            
+          </div>
           {/*<p className="italic font-outfit font-medium text-xs opacity-20">
                         (your dad looks like a green television salamander)
                     </p>*/}
