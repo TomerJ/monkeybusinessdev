@@ -3,7 +3,7 @@
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faAsterisk } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faAsterisk } from "@fortawesome/free-solid-svg-icons";
 import { useActionState } from "react";
 import Turnstile, { useTurnstile } from "react-turnstile";
 import { ContactForm } from "./form";
@@ -140,9 +140,18 @@ export default function Contact() {
                                     />
                                 </fieldset>
                                 <Turnstile sitekey="0x4AAAAAABnO7LSnfOIRYTlS" />
-                                <button className="btn btn-info rounded-sm mt-5">
+                                <button className="btn btn-info rounded-sm mt-3">
                                     Login
                                 </button>
+                                <a href="/">
+                                    <div className="flex items-center gap-x-1 rounded-xs h-5 mt-3 text-sm font-nunito">
+                                        <FontAwesomeIcon
+                                            icon={faArrowLeft}
+                                            className="h-4"
+                                        />{" "}
+                                        <p>Return Home</p>
+                                    </div>
+                                </a>
                             </div>
                         </form>
                     </div>
