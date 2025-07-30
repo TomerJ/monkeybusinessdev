@@ -12,7 +12,7 @@ export default function Contact() {
     const [actionState, formAction] = useActionState(ContactForm, null);
     const turnstile = useTurnstile();
     return (
-        <div className="min-h-screen w-full bg-zinc-950 text-white flex items-center justify-center">
+        <div className="min-h-screen w-full bg-zinc-950 text-white flex items-center justify-center bg-no-repeat bg-cover bg-center bg">
             <div className="container mx-auto px-16 flex-col lg:flex-row">
                 <div>
                     <img src="/mbwhite.svg" className="max-w-xl" />

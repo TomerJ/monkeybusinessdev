@@ -1,8 +1,8 @@
-import { SiGithub, SiX } from "@icons-pack/react-simple-icons";
+import { SiGithub, SiTwitch, SiX } from "@icons-pack/react-simple-icons";
 
 export default function Home() {
     return (
-        <div className="min-h-screen w-full bg-zinc-950 text-white flex items-center justify-center">
+        <div className="min-h-screen w-full bg-zinc-950 text-white flex items-center justify-center bg-no-repeat bg-cover bg-center bg">
             <div className="container mx-auto px-16 flex-col lg:flex-row">
                 <div>
                     <img src="/mbwhite.svg" className="max-w-xl" />
@@ -26,9 +26,18 @@ export default function Home() {
                                     />
                                 </div>
                             </a>
-                            <a href="https://google.com/">
+                            <a href="https://x.com/oohoohaahaah1/">
                                 <div className="flex items-center justify-center rounded-xs h-5 w-5 bg-white">
                                     <SiX
+                                        color="#000000"
+                                        size={24}
+                                        className="h-4"
+                                    />
+                                </div>
+                            </a>
+                            <a href="https://www.twitch.tv/notmonkeybusiness">
+                                <div className="flex items-center justify-center rounded-xs h-5 w-5 bg-white">
+                                    <SiTwitch
                                         color="#000000"
                                         size={24}
                                         className="h-4"
